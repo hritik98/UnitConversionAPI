@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using UnitConversion.Api.Application.Contracts;
-using UnitConversion.Api.Application.Models;
+using UnitConversion.Application.Contracts;
+using UnitConversion.Application.Models;
 
 namespace UnitConversion.Api.Presentation.Controllers;
 

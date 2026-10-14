@@ -1,7 +1,8 @@
-using UnitConversion.Api.Application.Contracts;
-using UnitConversion.Api.Application.Models;
+using UnitConversion.Application.Contracts;
+using UnitConversion.Application.Models;
+using UnitConversion.Domain.Models;
 
-namespace UnitConversion.Api.Application.Services;
+namespace UnitConversion.Application.Services;
 
 public sealed class UnitConversionService : IUnitConversionService
 {

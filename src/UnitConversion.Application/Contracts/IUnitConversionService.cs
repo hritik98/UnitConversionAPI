@@ -1,6 +1,6 @@
-using UnitConversion.Api.Application.Models;
+using UnitConversion.Application.Models;
 
-namespace UnitConversion.Api.Application.Contracts;
+namespace UnitConversion.Application.Contracts;
 
 public interface IUnitConversionService
 {

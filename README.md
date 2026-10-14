@@ -12,13 +12,12 @@ A lightweight ASP.NET Core Web API for converting values across common unit cate
 
 ## Project structure
 
-- src/UnitConversion.Api: API project
-- src/UnitConversion.Api/Presentation/Controllers: HTTP endpoints
-- src/UnitConversion.Api/Application/Models: DTOs and conversion contracts
-- src/UnitConversion.Api/Application/Services: conversion catalog and business logic
-- tests/UnitConversion.Api.Tests/Integration: API integration tests
+- src/UnitConversion.Api: API entry point and HTTP layer
+- src/UnitConversion.Application: application services, contracts, and DTOs
+- src/UnitConversion.Domain: domain models and core conversion definitions
+- tests/UnitConversion.Api.Tests/Integration: end-to-end API integration tests
 
-This keeps the solution closer to a layered enterprise setup while staying lightweight for the assessment scope.
+This follows a clean, layered architecture that keeps the API thin, the business logic testable, and the domain model reusable as the solution grows.
 
 ## Run locally
 
@@ -61,4 +60,4 @@ This keeps the solution closer to a layered enterprise setup while staying light
 ## Notes
 
 - This version intentionally hardcodes the supported units to keep the implementation simple and focused on the challenge.
-- The project is structured as a team-friendly ASP.NET Core solution with separate responsibilities for controllers, models, and conversion logic.
+- The project is structured as a team-friendly ASP.NET Core solution using a clean layered design: domain, application, and API responsibilities are separated for maintainability.

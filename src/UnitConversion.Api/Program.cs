@@ -1,5 +1,5 @@
-using UnitConversion.Api.Application.Contracts;
-using UnitConversion.Api.Application.Services;
+using UnitConversion.Application.Contracts;
+using UnitConversion.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
